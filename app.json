@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "Roman's Contacts",
+    "slug": "r1-userto-com",
+    "sdkVersion": "25.0.0",
+    "privacy": "public",
+	"version": "0.1.0",
+  }
+}
