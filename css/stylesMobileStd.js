@@ -3,6 +3,7 @@ const standard = StyleSheet.create({
 	"f_1": {"flex": 1},
 	"a_i_c": {alignItems: 'center'}, a_i_fs: {alignItems: "flex-start"}, a_i_fe: {alignItems: "flex-end"}, a_i_s: {alignItems: "stretch"}, a_i_b: {alignItems: "baseline"},
 	"j_c_c": {justifyContent: 'center'},
+	"t_a_c": {"textAlign": "center"},"t_a_l": {"textAlign": "left"},"t_a_r": {"textAlign": "right"},"t_a_j": {"textAlign": "justify"},"t_a_a": {"textAlign": "auto"},
 	"b_r_0p2": {
         "borderRadius": 0.2
     },
