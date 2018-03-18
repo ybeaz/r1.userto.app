@@ -4,7 +4,6 @@ import { Modal, Button, TextInput, StyleSheet, Text, View } from 'react-native';
 //import './stylesStandard.less';
 import {default as std} from './css/stylesMobileStd.js';
 
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -91,15 +90,27 @@ export default class App extends React.Component {
 			<Text></Text>
 			<Text>You can send an instant message</Text>
 			<TextInput
-				style={{height: 70, borderColor: 'gray', borderWidth: 1}}
+				style={{paddingTop: 6,
+						paddingRight: 8,
+						paddingBottom: 6,
+						paddingLeft: 8,
+						borderRadius: 5,
+						textAlignVertical:'top',
+						minHeight: 70, borderColor: 'grey', borderWidth: 1}}
+				underlineColorAndroid='#b2ebf2'
+				placeholder="type your message here"
+				placeholderTextColor="grey"
+				multiline={true}
+				clearTextOnFocus={true}
+				autoCorrect={true}
 				onChangeText={(text) => this.setState({text})}
 				value={this.state.text}
 			/>
-			
+			<Text></Text>
 			
 			
 			<Button
-			  styles = {[std.p_t_50]}
+			  style={[{borderRadius: 5}]}
 			  onPress={this.openModal}
 			  title="Send message"
 			  color="#841584"
